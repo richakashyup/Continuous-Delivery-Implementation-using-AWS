@@ -1139,5 +1139,5 @@ Monitor the pipeline and manually approve the change
 ![image](https://github.com/user-attachments/assets/00c6154d-0b84-4a8b-9c14-2c2440b9f44f)
 
 
-Congratulations! You have a fully functional continuous delivery
+With this we have a fully functional continuous delivery
 pipeline hosted on AWS.
