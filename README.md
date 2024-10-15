@@ -11,19 +11,19 @@ What accomplish
 
 create the continuous delivery pipeline discussed above. Learn to:
 
--   Set up a [[GitHub]{.underline}](https://github.com/) repository for
+-   Set up a [[GitHub]](https://github.com/) repository for
     the application code
 
 -   Create an [[AWS Elastic
-    Beanstalk]{.underline}](https://aws.amazon.com/elasticbeanstalk/?e=gs2020&p=cicd-intro) environment
+    Beanstalk]](https://aws.amazon.com/elasticbeanstalk/?e=gs2020&p=cicd-intro) environment
     to deploy the application
 
 -   Configure [[AWS
-    CodeBuild]{.underline}](https://aws.amazon.com/codebuild/?e=gs2020&p=cicd-intro) to
+    CodeBuild]](https://aws.amazon.com/codebuild/?e=gs2020&p=cicd-intro) to
     build the source code from GitHub
 
 -   Use [[AWS
-    CodePipeline]{.underline}](https://aws.amazon.com/codepipeline/?e=gs2020&p=cicd-intro) to
+    CodePipeline]](https://aws.amazon.com/codepipeline/?e=gs2020&p=cicd-intro) to
     set up the continuous delivery pipeline with source, build, and
     deploy stages
 
@@ -33,9 +33,9 @@ We need to have :
 
 -   An AWS account
 
--   A [[GitHub]{.underline}](https://github.com/) account
+-   A [[GitHub]](https://github.com/) account
 
--   [[Git]{.underline}](https://git-scm.com/) installed on your computer
+-   [[Git]](https://git-scm.com/) installed on your computer
 
 ## Application architecture
 
@@ -44,15 +44,15 @@ We need to have :
 ![image](https://github.com/user-attachments/assets/0aa60d09-7474-4899-9b6d-db0aa4adfad8)
 
 
-**[Exercise-1 : Setting up git repository]{.underline}**
+**[Exercise-1 : Setting up git repository]**
 
-**[Fork the starter repo]{.underline}**
+**[Fork the starter repo]**
 
 1.  In a new browser tab, navigate
-    to [[GitHub]{.underline}](https://github.com/) and make sure you are
+    to [[GitHub]](https://github.com/) and make sure you are
     logged into your account.
 
-2.  Open the [aws-elastic-beanstalk-express-js-sample]{.underline} repo.
+2.  Open the [aws-elastic-beanstalk-express-js-sample] repo.
 
 3.  Choose the white Fork button on the top right corner of the screen.
     Next, create a fork page will appear. Create it
@@ -66,10 +66,10 @@ We need to have :
 ![image](https://github.com/user-attachments/assets/175473c4-32ec-48e8-8019-3914e095a8cb)
 
 
-**[Push a change to new repo]{.underline}**
+**[Push a change to new repo]**
 
 1.  Go to
-    the [[repository]{.underline}](https://github.com/aws-samples/aws-elastic-beanstalk-express-js-sample) and
+    the [[repository]](https://github.com/aws-samples/aws-elastic-beanstalk-express-js-sample) and
     choose the green Code button near the top of the page.
 
 2.  To clone the repository using HTTPS, confirm that the heading
@@ -132,10 +132,10 @@ Note that you need to configure Personal access tokens
 ![image](https://github.com/user-attachments/assets/db045dcc-47fc-4346-8038-a83645d8ce6a)
 
 
-**[Check the change]{.underline}**
+**[Check the change]**
 
 1.  In your browser window,
-    open [[GitHub]{.underline}](https://github.com/).
+    open [[GitHub]](https://github.com/).
 
 2.  In the left navigation panel, under Repositories, select the one
     named aws-elastic-beanstalk-express-js-sample.
@@ -151,7 +151,7 @@ Exercise 2 Deploy Web App
 Configure AWS Elastic Beanstalk App
 
 1.  In a new browser tab, open the [[AWS Elastic Beanstalk
-    console]{.underline}](https://console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/welcome).
+    console]](https://console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/welcome).
 
 2.  Choose the orange Create Application button.
 
@@ -728,7 +728,7 @@ webpage congratulating you!
 ![image](https://github.com/user-attachments/assets/584e7676-2dc9-4f9d-ae3e-427c58907f0d)
 
 
-**[Create Build Project]{.underline}**
+**[Create Build Project]**
 
 Configure the AWS CodeBuild project
 
@@ -863,7 +863,7 @@ Test the CodeBuild Project
 ![image](https://github.com/user-attachments/assets/602a6198-634e-437b-85fa-c397ea769562)
 
 
-**[Create Delivery Pipeline]{.underline}**
+**[Create Delivery Pipeline]**
 
 Create a new Pipeline
 
@@ -982,9 +982,10 @@ Watch first Pipeline Execution
 
 ![image](https://github.com/user-attachments/assets/00422274-533f-4e45-8847-9bdae490056c)
 
-File Not Uploading
+![1](https://github.com/user-attachments/assets/f18d6506-b111-48bc-b9ca-f02f46340265)
 
-**[Finalize Pipeline and Test]{.underline}**
+
+**[Finalize Pipeline and Test]**
 
 Create a review stage in pipeline
 
@@ -994,38 +995,38 @@ Create a review stage in pipeline
 2.  You should see the pipeline we created, which was
     called Pipeline-DevOpsGettingStarted. Select this pipeline.
 
-![](media/image96.png){width="6.268055555555556in"
-height="1.582638888888889in"}
+![image](https://github.com/user-attachments/assets/b8ba2dc9-75d4-4ee4-bcb0-1c19b8a6b138)
+
 
 3.  Choose the white Edit button near the top of the page.
 
-> ![](media/image97.png){width="6.268055555555556in"
-> height="2.6347222222222224in"}
+![image](https://github.com/user-attachments/assets/ec8ea8a5-288e-4799-92eb-58030959021c)
+
 
 4.  Choose the white Add stage button between
     the Build and Deploy stages.
 
-> ![](media/image98.png){width="6.268055555555556in"
-> height="1.9006944444444445in"}
+![image](https://github.com/user-attachments/assets/9221b5ec-b912-4791-89d6-ed465898fb89)
+
 
 5.  In the Stage name field, enter *Review.*
 
 6.  Choose the orange Add stage button.
 
-> ![](media/image99.png){width="4.061459973753281in"
-> height="1.749047462817148in"}
+![image](https://github.com/user-attachments/assets/2290a047-ea60-410a-ae29-ba671170a662)
+
 
 7.  In the Review stage, choose the white Add action group button.
 
-> ![](media/image100.png){width="5.184248687664042in"
-> height="0.7598895450568679in"}
+![image](https://github.com/user-attachments/assets/029f9544-4998-4282-9ecf-4ef94a3acee0)
+
 
 8.  Under Action name, enter *Manual_Review.*
 
 9.  From the Action provider dropdown, select Manual approval.
 
-> ![](media/image101.png){width="5.168281933508312in"
-> height="1.5443000874890638in"}
+![image](https://github.com/user-attachments/assets/9b478a51-9353-4974-aa6a-0502394b95fe)
+
 
 10. Confirm that the optional fields have been left blank.
 
@@ -1033,15 +1034,15 @@ height="1.582638888888889in"}
 
 12. Choose the orange Save button at the top of the page.
 
-> ![](media/image102.png){width="5.200263560804899in"
-> height="1.071048775153106in"}
+![image](https://github.com/user-attachments/assets/dceb8c0e-d98d-430e-938f-28cb34393b8d)
+
 
 13. Choose the orange Save button to confirm the changes. You will now
     see your pipeline with four stages: Source, Build,
     Review, and Deploy.
 
-![](media/image103.png){width="5.11471675415573in"
-height="1.9028608923884514in"}
+![image](https://github.com/user-attachments/assets/a510529e-16f6-4b11-8c0b-a8f781bf975c)
+
 
 Push a New commit Repo
 
@@ -1049,8 +1050,8 @@ Push a New commit Repo
 
 2.  Change the message in Line 5.
 
-> ![](media/image104.png){width="5.006627296587927in"
-> height="1.8210454943132108in"}
+![image](https://github.com/user-attachments/assets/f214e127-f457-4c9a-9136-a48b37ce836a)
+
 
 3.  Save the file.
 
@@ -1064,16 +1065,16 @@ Push a New commit Repo
 >
 > git commit -m \"final pipeline test\"
 >
-> ![](media/image105.png){width="6.268055555555556in"
-> height="0.8951388888888889in"}
+![image](https://github.com/user-attachments/assets/b32ac36a-6050-406d-9a38-636040ffac76)
+
 
 7.  Push the local changes to the remote repo hosted on GitHub with the
     following command:
 
 git push
 
-![](media/image106.png){width="5.528343175853018in"
-height="3.581233595800525in"}
+![image](https://github.com/user-attachments/assets/bd11ab1f-f123-4d4e-91b5-51bc642ae081)
+
 
 Monitor the pipeline and manually approve the change
 
@@ -1084,70 +1085,59 @@ Monitor the pipeline and manually approve the change
     Release the Change.You should see the Source and Build stages switch
     from blue to green.
 
-> ![](media/image107.png){width="6.268055555555556in"
-> height="3.441666666666667in"}
+![image](https://github.com/user-attachments/assets/d057f7b6-927d-4b32-b3e5-9f53b973c281)
+
 
 3.  When the Review stage switches to blue, choose the
     white Review button.
 
-> ![](media/image108.png){width="6.268055555555556in"
-> height="3.6020833333333333in"}
+![image](https://github.com/user-attachments/assets/8f6de087-fb03-46ef-b840-9aca192c7cd0)
+
 >
 > Note:- add a Manual approval policy to user
->
-> {
->
-> \"Version\": \"2012-10-17\",
->
-> \"Statement\": \[
->
-> {
->
-> \"Effect\": \"Allow\",
->
-> \"Action\": \[
->
-> \"codepipeline:PutApprovalResult\",
->
-> \"codepipeline:GetPipelineExecution\"
->
-> \],
->
-> \"Resource\": \"\*\"
->
-> }
->
-> \]
->
-> }
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "codepipeline:PutApprovalResult",
+                "codepipeline:GetPipelineExecution"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
 
+```
 4.  Select an approval.
 
 5.  Click on Submit
 
-> ![](media/image109.png){width="6.268055555555556in"
-> height="3.78125in"}
+![image](https://github.com/user-attachments/assets/35b8131e-9762-4170-96b7-432537d40241)
+
 
 6.  Wait for the Review and Deploy stages to switch to green.
 
-> ![](media/image110.png){width="6.268055555555556in"
-> height="3.46875in"}
+![image](https://github.com/user-attachments/assets/94975af7-6e88-4301-a423-fb9fe8292c71)
+
 
 7.  Select the AWS Elastic Beanstalk link in the Deploy stage. A new tab
     listing your Elastic Beanstalk environments will open.
 
-> ![](media/image111.png){width="6.268055555555556in"
-> height="3.9006944444444445in"}
+![image](https://github.com/user-attachments/assets/bb0a0a6b-319b-45cc-9b2d-776d7726f61c)
+
 
 8.  Select the URL in the Devopsgettingstarted-env row. You should see a
     webpage with a white background and the text you had in your most
     recent GitHub commit.
 
-> ![](media/image112.png){width="6.268055555555556in"
-> height="1.3756944444444446in"}
+![image](https://github.com/user-attachments/assets/8690d50b-6f14-49b2-8a31-3d8a86b05143)
+
 >
-> ![](media/image113.png){width="6.268055555555556in"
-> height="1.3736111111111111in"}
+![image](https://github.com/user-attachments/assets/00c6154d-0b84-4a8b-9c14-2c2440b9f44f)
+
 
 Congratulations! You have a fully functional continuous delivery
 pipeline hosted on AWS.
